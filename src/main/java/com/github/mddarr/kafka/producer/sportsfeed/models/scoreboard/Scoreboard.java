@@ -4,14 +4,14 @@ import java.util.List;
 
 public class Scoreboard {
 
-    List<List<GameScore>> gameScore;
-    String lastUpdatedOn;
-    public List<List<GameScore>> getGameScore(){
-        return gameScore;
-    }
-    public String getLastUpdatedOn(){
-        return lastUpdatedOn;
+    private List<Game> games;
+
+    public Scoreboard(){
+
     }
 
+    public void addGame(Game game){
+        games.add(game);
+    }
 
 }
